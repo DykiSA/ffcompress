@@ -2,10 +2,39 @@
 
 Cross-platform CLI for compressing multimedia files (image, video, audio) using FFmpeg, ported from the FFShare Android app.
 
+## Page Contents
+
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Release](#release)
+- [Build](#build)
+- [Usage](#usage)
+    - [Single file](#single-file)
+    - [Multiple files](#multiple-files)
+    - [Directory](#directory)
+    - [Flags](#flags)
+- [Compression Strategy](#compression-strategy)
+- [License](#license)
+
 ## Requirements
 
 - `ffmpeg` and `ffprobe` must be installed and accessible in PATH
 - Go 1.23+ (for building from source)
+
+## Installation
+
+There are 2 ways of how to get this tool.
+
+1. Download the binary from the **Release** section and skip the **Build** section. 
+2. Build the binary yourself, see **Build** section.
+
+Ensure you have required dependencies above. No need to install Go if you are not meant to build the binary yourself.
+
+See **Usage** section below for how to use the tool.
+
+## Release
+
+Go to release page [here](https://github.com/DykiSA/ffcompress/releases).
 
 ## Build
 
@@ -17,7 +46,7 @@ The result is a single static binary (`ffcompress`) in `./build` folder with no 
 
 ## Usage
 
-Enter the build folder
+If you build the binary yourself, enter the build folder first.
 
 ```bash
 cd build
